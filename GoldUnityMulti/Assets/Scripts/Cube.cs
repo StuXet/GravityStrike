@@ -5,20 +5,15 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    PhotonView PV;
-    PlayerController players;
-    public float damage = 50;
-    private void OnCollisionEnter(Collision col)
-    {
-        if (PV.IsMine)
-        {
-            PV.RPC(nameof (UpdateHealthPlayerX), RpcTarget.All);
-        }
-    }
+    [SerializeField] Transform obj;
+    [SerializeField] Transform respawnPoint;
 
-    [PunRPC]
-    private void UpdateHealthPlayerX()
+    private void Update()
     {
-        //players.currentHealth -= damage;
+        if (obj.transform.position.y < -10f)
+        {
+            obj.transform.position = respawnPoint.transform.position;
+            Physics.SyncTransforms();
+        }
     }
 }
