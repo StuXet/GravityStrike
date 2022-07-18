@@ -4209,7 +4209,7 @@ GameObject:
   - component: {fileID: 141879198}
   m_Layer: 0
   m_Name: BadCube1
-  m_TagString: GoodCube
+  m_TagString: BadCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7027,7 +7027,7 @@ GameObject:
   - component: {fileID: 240635390}
   m_Layer: 0
   m_Name: BadCube2
-  m_TagString: GoodCube
+  m_TagString: BadCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16304,7 +16304,7 @@ GameObject:
   - component: {fileID: 639699858}
   m_Layer: 0
   m_Name: BadCube4
-  m_TagString: GoodCube
+  m_TagString: BadCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22294,7 +22294,7 @@ GameObject:
   - component: {fileID: 883772923}
   m_Layer: 0
   m_Name: BadCube3
-  m_TagString: GoodCube
+  m_TagString: BadCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40775,7 +40775,7 @@ GameObject:
   - component: {fileID: 1463067379}
   m_Layer: 0
   m_Name: BadCube
-  m_TagString: GoodCube
+  m_TagString: BadCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
