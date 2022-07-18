@@ -111,6 +111,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         {
             Die();
         }
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     private void FixedUpdate()
@@ -188,6 +193,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
     public void TakeDamage(float damage)
     {
         PV.RPC(nameof(RPC_TakeDamage) , PV.Owner, damage);
+        PV.RPC(nameof(OnCollisionEnter) , PV.Owner);
     }
 
     [PunRPC]
@@ -202,6 +208,24 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
             Die();
             PlayerManager.Find(info.Sender).GetKill();
         }
+    }
+
+    [PunRPC]
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "BadCube")
+        {
+            Debug.Log("BadCube");
+            currentHealth -= 25;
+        Debug.Log(currentHealth);
+        }
+        else if (collision.gameObject.tag == "GoodCube")
+        {
+            Debug.Log("GoodCube");
+            currentHealth += 25;
+        Debug.Log(currentHealth);
+        }
+        healthbarImage.fillAmount = currentHealth / maxHealth;
     }
 
     void Die()
