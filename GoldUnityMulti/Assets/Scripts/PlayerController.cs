@@ -116,6 +116,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         {
             Die();
         }
+
+        if (currentHealth > 100)
+        {
+            currentHealth = maxHealth;
+        }
     }
 
     private void FixedUpdate()
