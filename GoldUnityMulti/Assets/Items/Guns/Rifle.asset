@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Rifle
   m_EditorClassIdentifier: 
   itemName: Rifle
-  dmage: 50
+  dmage: 0
