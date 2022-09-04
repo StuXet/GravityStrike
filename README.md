@@ -1,4 +1,4 @@
-#Gravity Strike
+# Gravity Strike
 is a funny action shooter PC game with a gravity gun instead of weapons.
 
 Players will have to search for red boxes and shoot them at other players
