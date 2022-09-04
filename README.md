@@ -9,7 +9,7 @@ This DEMO was submitted as a Unity Multiplayer final project in our Unity Multip
 
 and was passionately developed by Me
 
-#Setup 
+# Setup 
 Create a room with your friends and enjoy
 
 *** Important Note ***
